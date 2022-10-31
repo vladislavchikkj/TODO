@@ -88,8 +88,8 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.wrapper__input,
-.menu__input,
+.wrapper__input, 
+.menu__input, 
 .menu__label {
     vertical-align: middle;
 }
@@ -113,7 +113,8 @@ body {
     transform: rotateZ(0);
 }
 
-.completed .menu__completed {
+.completed 
+.menu__completed {
     text-decoration: line-through;
     color: #888;
 }
@@ -124,12 +125,14 @@ body {
     flex-grow: 1;
 }
 
-.edit .edit__label {
+.edit 
+.edit__label {
     display: inline-block;
     width: 224px;
 }
 
-.edit .menu__label {
+.edit 
+.menu__label {
     display: none;
 }
 
