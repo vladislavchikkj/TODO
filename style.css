@@ -101,7 +101,7 @@ body {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
-    width: 226px
+    width: 226px;
 }
 
 .button__img {
@@ -126,7 +126,7 @@ body {
 
 .edit .edit__label {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .edit .menu__label {
