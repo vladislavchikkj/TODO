@@ -11,7 +11,7 @@
 let taskInput = document.getElementById('wrapper__label-input'); //Add a new task.
 let addButton = document.getElementsByTagName('button')[0]; //first button
 let incompleteTaskHolder = document.getElementById('incompleteTasks'); //ul of #incompleteTasks
-let completedTasksHolder = document.getElementById('completed-tasks'); //completed-tasks
+let completedTasksHolder = document.getElementById('completed'); //completed-tasks
 
 //New task list item
 let createNewTaskElement = function (taskString) {
