@@ -30,6 +30,10 @@ body {
 .add__wrapper {
     display: flex;
 }
+.add__title {
+    display: block;
+    margin-bottom: 20px;
+  }
 .menu {
     margin:0;
     padding: 0px;
@@ -97,7 +101,7 @@ body {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
-    width: 226px;
+    width: 226px
 }
 
 .button__img {
@@ -121,12 +125,16 @@ body {
 }
 
 .edit .edit__label {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 .edit .menu__label {
-    display:none;
+    display: none;
+}
+
+.edit__input {
+    margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -135,4 +143,4 @@ body {
       text-align: center;
     }
 
-  }
+}
