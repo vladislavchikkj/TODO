@@ -30,10 +30,13 @@ body {
 .add__wrapper {
     display: flex;
 }
-.add__title {
-    display: block;
-    margin-bottom: 20px;
-  }
+
+
+.wrapper__input,
+.edit__input {
+    width: 78%;
+}
+
 .menu {
     margin:0;
     padding: 0px;
@@ -61,6 +64,25 @@ body {
     margin: 0;
     text-transform: uppercase;
 }
+
+.add__title {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.wrapper__input,
+.button,
+.menu__input {
+  outline: none;
+}
+
+.wrapper__input,
+.menu__input,
+.menu__label {
+  vertical-align: middle;
+}
+
+
 .wrapper__input,
 .menu__input {
     margin: 0;
@@ -80,14 +102,16 @@ body {
 
 
 .menu__item {
+    list-style: none;
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .wrapper__input, 
 .menu__input, 
 .menu__label {
