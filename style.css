@@ -90,18 +90,16 @@ body {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.menu__input {
     margin: 0 10px;
 }
-li > label {
+.menu__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
-    width: 226px
-}
+
 .button__img {
     height: 2em;
     transform: rotateZ(45deg);
@@ -120,7 +118,7 @@ li >    input[type="text"] {
     display: none;
     outline: none;
     flex-grow: 1;
-  }
+}
 
 .edit .edit__label {
     display:inline-block;
@@ -136,5 +134,5 @@ li >    input[type="text"] {
     .header {
       text-align: center;
     }
-  
+
   }
