@@ -1,0 +1,173 @@
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: Lato, sans-serif;
+}
+.header  {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    text-align: right;
+}
+.header__img {
+    width: 100%;
+}
+.header__link  {
+    font-family: fantasy, cursive;
+}
+
+.main {
+    display: block;
+    width: 500px;
+    margin: 0 auto 0;
+}
+.wrapper__label,
+.menu__label {
+    width: 56%;
+    display: inline-block;
+    flex-grow: 1
+}
+.add__wrapper {
+    display: flex;
+}
+
+
+.wrapper__input,
+.edit__input {
+    width: 78%;
+}
+
+.menu {
+    margin:0;
+    padding: 0px;
+}
+
+.button {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+}
+.button:hover {
+    color: #3a3A3a;
+}
+
+.title {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 30px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.add__title {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.wrapper__input,
+.button,
+.menu__input {
+  outline: none;
+}
+
+.wrapper__input,
+.menu__input,
+.menu__label {
+  vertical-align: middle;
+}
+
+
+.wrapper__input,
+.menu__input {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 21px;
+    padding: 0 9px;
+    border: 1px solid #dDd;
+    background: #FFF;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+}
+.wrapper__input:focus {
+    color: #333;
+}
+
+
+.menu__item {
+    list-style: none;
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper__input, 
+.menu__input, 
+.menu__label {
+    vertical-align: middle;
+}
+
+.menu__input {
+    margin: 0 10px;
+}
+.menu__label {
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 226px;
+}
+
+.button__img {
+    height: 2em;
+    transform: rotateZ(45deg);
+    transition: transform 200ms ease-in;
+}
+.button__img:hover {
+    transform: rotateZ(0);
+}
+
+.completed 
+.menu__completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.edit__label {
+    display: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.edit 
+.edit__label {
+    display: inline-block;
+    width: 224px;
+}
+
+.edit 
+.menu__label {
+    display: none;
+}
+
+.edit__input {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .header {
+      text-align: center;
+    }
+
+}

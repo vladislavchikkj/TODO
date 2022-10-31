@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" 
+        content="IE=edge">
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+  <link rel="stylesheet" 
+        href="style.css" 
+        media="screen">
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">>
+    <a class="header__link" 
+       href="https://goal-life.com/page/method/matrix-eisenhower">
+       Want more details?
+    </a>
+  </header>
+  <main class="main">
+    <section class="add">
+      <h3 class="add__title title">Add Item</h3>
+      <div class="add__wrapper wrapper">
+        <label class="wrapper__label" 
+               for="wrapper__label-input">
+          <input class="wrapper__input" id="wrapper__label-input" type="text">
+          <button class="wrapper__button button">Add</button>
+        </label>
+      </div>
+    </section>
+    <section class="todo">
+      <h3 class="todo__title title">Todo</h3>
+      <ul class="todo__menu menu" id="incompleteTasks">
+        <li class="menu__item ">
+        <input class="menu__input" type="checkbox">
+        <label class="menu__label menu__completed">Pay Bills</label>
+        <label class="menu__label edit__label">
+          <input class="menu__input edit__input" type="text">
+        </label>
+        <button class="menu__button menu__button-edit button">Edit</button>
+        <button class="menu__button menu__button-delete button">
+          <img class="button__img" src="./remove.svg" alt="delete ">
+        </button>
+        </li>
+        <li class="menu__item edit">
+        <input class="menu__input" type="checkbox">
+        <label class="menu__label menu__completed">Go Shopping</label>
+        <label class="menu__label edit__label">
+          <input class="menu__input edit__input" value="Go Shopping" type="text">
+        </label>
+        <button class="menu__button menu__button-edit button">Save</button>
+        <button class="menu__button menu__button-delete button">
+          <img class="button__img" src="./remove.svg" alt="delete">
+        </button>
+        </li>
+      </ul>
+    </section>
+      <section class="completed">
+        <h3 class="completed__title title">Completed</h3>
+        <ul class="completed__menu menu" id="completed">
+          <li class="menu__item">
+            <input class="menu__input" type="checkbox" checked>
+            <label class="menu__label menu__completed">See the Doctor</label>
+            <label class="menu__label edit__label">
+              <input class="menu__input edit__input" type="text">
+            </label>
+            <button class="menu__button menu__button-edit button">Edit</button>
+            <button class="menu__button menu__button-delete button">
+              <img class="button__img" src="./remove.svg" alt="delete">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+<script src="app.js"></script>
+</body>
+</html>
