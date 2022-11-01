@@ -7,11 +7,35 @@
 
 
 // Event handling, user interaction is what starts the code execution.
+let popUp = document.createElement('div');
+popUp.className = 'pop-up';
+document.body.append(popUp);
+var e    = document.createElement('a');
+    e.className = 'link';
+    e.href = 'https://github.com/vladislavchikkj/TODO/pull/1';
+    e.title = 'PR';
+    e.appendChild(document.createTextNode('My Pull requests'));
+    popUp.appendChild(e);
+
+let btnClosePop = document.createElement('div');
+btnClosePop.className = 'btnClosePop';
+btnClosePop.appendChild(document.createTextNode('+'));
+popUp.append(btnClosePop);
+
+
+btnClosePop.addEventListener('click', () => {
+  popUp.style.display = 'none';
+  blurForPopUp.style.display = 'none';
+
+  popUp.style.display = 'none';
+  blurForPopUp.style.display = 'none';
+})
+
 
 let taskInput = document.getElementById('wrapper__label-input'); //Add a new task.
 let addButton = document.getElementsByTagName('button')[0]; //first button
 let incompleteTaskHolder = document.getElementById('incompleteTasks'); //ul of #incompleteTasks
-let completedTasksHolder = document.getElementById('completed-tasks'); //completed-tasks
+let completedTasksHolder = document.getElementById('completed'); //completed-tasks
 
 //New task list item
 let createNewTaskElement = function (taskString) {
