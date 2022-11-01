@@ -2,6 +2,7 @@ body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
+    position: relative;
 }
 .header  {
     width: 500px;
@@ -156,6 +157,52 @@ body {
 
 .edit__input {
     margin: 0;
+}
+
+.pop-up{
+    width: 300px;
+    height: 75px;
+    background-color: rgba(94, 94, 94, 0.829);
+    border-radius: 10%;
+
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 20%;
+    padding-top: 50px;
+}
+
+.link{
+    margin: 0 auto;
+    text-decoration: none;
+    color: #dDd;
+    font-size: 20px;
+}
+.link:hover{
+    color: #d3963b;
+}
+
+.btnClosePop{
+    -webkit-user-select: none;
+    background: rgba(0, 0, 0, 0);
+    color:#d3963b;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 7px;
+    width: 2rem;
+    height: 2rem;
+    z-index: 3;
+    cursor: pointer;
+    text-align: center;
+    font-size: 3rem;
+    transform: rotate(45deg);
+    transition: all .3s;
 }
 
 @media (max-width: 768px) {
